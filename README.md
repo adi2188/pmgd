@@ -1,4 +1,4 @@
-# Poorgraph
+# Poorgraph - PMGD (Poor Man's Graph Database)
 
 Poorgraph is a small graph service prototype. The demo domain is an ad-tech identity graph: profiles are connected to identifiers like hashed emails, cookies, and device ids, and profiles can belong to audience segments targeted by campaigns.
 
