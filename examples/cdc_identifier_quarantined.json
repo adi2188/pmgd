@@ -1,0 +1,14 @@
+{
+  "event_id": "identifiers:cookie_shared_device:v2",
+  "op": "upsert",
+  "entity_kind": "node",
+  "entity_type": "Identifier",
+  "entity_id": "cookie_shared_device",
+  "version": 2,
+  "properties": {
+    "kind": "cookie",
+    "value_hash": "hash_cookie_shared_device",
+    "status": "quarantined",
+    "first_seen": "2026-09-01"
+  }
+}

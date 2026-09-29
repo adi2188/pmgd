@@ -1,0 +1,1564 @@
+{
+  "batch_id": "identity-complex-demo",
+  "version": 1,
+  "notes": [
+    "A small identity graph with profiles, identifiers, audience segments, and campaigns.",
+    "Shared household and office identifiers create bridges between profile clusters.",
+    "The graph has multiple components so connected_component has something to show."
+  ],
+  "nodes": [
+    {
+      "type": "Profile",
+      "id": "p_alice",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "US",
+        "confidence": 0.96
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_bob",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "US",
+        "confidence": 0.88
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_carla",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "US",
+        "confidence": 0.91
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_dan",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "CA",
+        "confidence": 0.86
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_eve",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "CA",
+        "confidence": 0.77
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_finn",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "US",
+        "confidence": 0.82
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_grace",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "UK",
+        "confidence": 0.92
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_hank",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "US",
+        "confidence": 0.73
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_ivy",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "US",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_jules",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "US",
+        "confidence": 0.79
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_kai",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "UK",
+        "confidence": 0.84
+      }
+    },
+    {
+      "type": "Profile",
+      "id": "p_lina",
+      "properties": {
+        "status": "active",
+        "created_at": "2026-09-01",
+        "home_market": "CA",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_alice_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_alice_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_alice_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_alice_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_bob_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_bob_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_bob_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_bob_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_carla_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_carla_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_carla_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_carla_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_dan_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_dan_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_dan_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_dan_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_eve_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_eve_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_eve_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_eve_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_finn_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_finn_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_finn_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_finn_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_grace_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_grace_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_grace_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_grace_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_hank_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_hank_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_hank_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_hank_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_ivy_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_ivy_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_ivy_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_ivy_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_jules_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_jules_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_jules_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_jules_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_kai_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_kai_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_kai_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_kai_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "email_lina_hash",
+      "properties": {
+        "kind": "email_sha256",
+        "value_hash": "hash_email_lina_hash",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_lina_web",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_lina_web",
+        "status": "active",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "ctv_living_room",
+      "properties": {
+        "kind": "ctv_id",
+        "value_hash": "hash_ctv_living_room",
+        "status": "review",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Identifier",
+      "id": "cookie_office_nat",
+      "properties": {
+        "kind": "cookie",
+        "value_hash": "hash_cookie_office_nat",
+        "status": "review",
+        "first_seen": "2026-09-01"
+      }
+    },
+    {
+      "type": "Segment",
+      "id": "seg_high_intent",
+      "properties": {
+        "name": "High Intent",
+        "category": "intent",
+        "size_estimate": 125000
+      }
+    },
+    {
+      "type": "Segment",
+      "id": "seg_cart_abandoners",
+      "properties": {
+        "name": "Cart Abandoners",
+        "category": "retention",
+        "size_estimate": 62000
+      }
+    },
+    {
+      "type": "Segment",
+      "id": "seg_loyalists",
+      "properties": {
+        "name": "Loyalists",
+        "category": "loyalty",
+        "size_estimate": 42000
+      }
+    },
+    {
+      "type": "Segment",
+      "id": "seg_suppressed",
+      "properties": {
+        "name": "Suppression List",
+        "category": "compliance",
+        "size_estimate": 12000
+      }
+    },
+    {
+      "type": "Segment",
+      "id": "seg_household_streamers",
+      "properties": {
+        "name": "Household Streamers",
+        "category": "ctv",
+        "size_estimate": 36000
+      }
+    },
+    {
+      "type": "Segment",
+      "id": "seg_b2b_buyers",
+      "properties": {
+        "name": "B2B Buyers",
+        "category": "firmographic",
+        "size_estimate": 18000
+      }
+    },
+    {
+      "type": "Campaign",
+      "id": "camp_spring_sale",
+      "properties": {
+        "name": "Spring Sale",
+        "channel": "display",
+        "status": "active",
+        "budget": 50000
+      }
+    },
+    {
+      "type": "Campaign",
+      "id": "camp_winback",
+      "properties": {
+        "name": "Winback",
+        "channel": "email",
+        "status": "active",
+        "budget": 30000
+      }
+    },
+    {
+      "type": "Campaign",
+      "id": "camp_ctv_launch",
+      "properties": {
+        "name": "CTV Launch",
+        "channel": "ctv",
+        "status": "active",
+        "budget": 70000
+      }
+    },
+    {
+      "type": "Campaign",
+      "id": "camp_b2b_q4",
+      "properties": {
+        "name": "B2B Q4",
+        "channel": "paid_social",
+        "status": "paused",
+        "budget": 45000
+      }
+    },
+    {
+      "type": "Campaign",
+      "id": "camp_suppression_audit",
+      "properties": {
+        "name": "Suppression Audit",
+        "channel": "internal",
+        "status": "active",
+        "budget": 1000
+      }
+    }
+  ],
+  "edges": [
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_alice-email_alice_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_alice"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_alice_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_alice-cookie_alice_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_alice"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_alice_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_bob-email_bob_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_bob"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_bob_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_bob-cookie_bob_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_bob"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_bob_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_carla-email_carla_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_carla"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_carla_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_carla-cookie_carla_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_carla"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_carla_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_dan-email_dan_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_dan"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_dan_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_dan-cookie_dan_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_dan"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_dan_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_eve-email_eve_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_eve"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_eve_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_eve-cookie_eve_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_eve"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_eve_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_finn-email_finn_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_finn"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_finn_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_finn-cookie_finn_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_finn"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_finn_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_grace-email_grace_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_grace"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_grace_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_grace-cookie_grace_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_grace"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_grace_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_hank-email_hank_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_hank"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_hank_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_hank-cookie_hank_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_hank"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_hank_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_ivy-email_ivy_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_ivy"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_ivy_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_ivy-cookie_ivy_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_ivy"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_ivy_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_jules-email_jules_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_jules"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_jules_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_jules-cookie_jules_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_jules"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_jules_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_kai-email_kai_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_kai"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_kai_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_kai-cookie_kai_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_kai"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_kai_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_lina-email_lina_hash",
+      "source": {
+        "type": "Profile",
+        "id": "p_lina"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_lina_hash"
+      },
+      "properties": {
+        "evidence": "login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_lina-cookie_lina_web",
+      "source": {
+        "type": "Profile",
+        "id": "p_lina"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_lina_web"
+      },
+      "properties": {
+        "evidence": "web_event",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_alice-ctv_living_room",
+      "source": {
+        "type": "Profile",
+        "id": "p_alice"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "ctv_living_room"
+      },
+      "properties": {
+        "evidence": "shared_environment",
+        "confidence": 0.55
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_bob-ctv_living_room",
+      "source": {
+        "type": "Profile",
+        "id": "p_bob"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "ctv_living_room"
+      },
+      "properties": {
+        "evidence": "shared_environment",
+        "confidence": 0.55
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_finn-ctv_living_room",
+      "source": {
+        "type": "Profile",
+        "id": "p_finn"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "ctv_living_room"
+      },
+      "properties": {
+        "evidence": "shared_environment",
+        "confidence": 0.55
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_carla-cookie_office_nat",
+      "source": {
+        "type": "Profile",
+        "id": "p_carla"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_office_nat"
+      },
+      "properties": {
+        "evidence": "shared_environment",
+        "confidence": 0.55
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_dan-cookie_office_nat",
+      "source": {
+        "type": "Profile",
+        "id": "p_dan"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_office_nat"
+      },
+      "properties": {
+        "evidence": "shared_environment",
+        "confidence": 0.55
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_eve-cookie_office_nat",
+      "source": {
+        "type": "Profile",
+        "id": "p_eve"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_office_nat"
+      },
+      "properties": {
+        "evidence": "shared_environment",
+        "confidence": 0.55
+      }
+    },
+    {
+      "type": "PROFILE_HAS_IDENTIFIER",
+      "id": "p_hank-cookie_office_nat",
+      "source": {
+        "type": "Profile",
+        "id": "p_hank"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_office_nat"
+      },
+      "properties": {
+        "evidence": "shared_environment",
+        "confidence": 0.55
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_alice-seg_high_intent",
+      "source": {
+        "type": "Profile",
+        "id": "p_alice"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_high_intent"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_bob-seg_cart_abandoners",
+      "source": {
+        "type": "Profile",
+        "id": "p_bob"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_cart_abandoners"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_carla-seg_b2b_buyers",
+      "source": {
+        "type": "Profile",
+        "id": "p_carla"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_b2b_buyers"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_dan-seg_b2b_buyers",
+      "source": {
+        "type": "Profile",
+        "id": "p_dan"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_b2b_buyers"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_eve-seg_suppressed",
+      "source": {
+        "type": "Profile",
+        "id": "p_eve"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_suppressed"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_finn-seg_household_streamers",
+      "source": {
+        "type": "Profile",
+        "id": "p_finn"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_household_streamers"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_grace-seg_loyalists",
+      "source": {
+        "type": "Profile",
+        "id": "p_grace"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_loyalists"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_hank-seg_b2b_buyers",
+      "source": {
+        "type": "Profile",
+        "id": "p_hank"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_b2b_buyers"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_ivy-seg_high_intent",
+      "source": {
+        "type": "Profile",
+        "id": "p_ivy"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_high_intent"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_jules-seg_cart_abandoners",
+      "source": {
+        "type": "Profile",
+        "id": "p_jules"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_cart_abandoners"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_kai-seg_loyalists",
+      "source": {
+        "type": "Profile",
+        "id": "p_kai"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_loyalists"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "PROFILE_IN_SEGMENT",
+      "id": "p_lina-seg_suppressed",
+      "source": {
+        "type": "Profile",
+        "id": "p_lina"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_suppressed"
+      },
+      "properties": {
+        "score": 0.75,
+        "assigned_at": "2026-09-20"
+      }
+    },
+    {
+      "type": "CAMPAIGN_TARGETS_SEGMENT",
+      "id": "camp_spring_sale-seg_high_intent",
+      "source": {
+        "type": "Campaign",
+        "id": "camp_spring_sale"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_high_intent"
+      },
+      "properties": {
+        "starts_at": "2026-10-01"
+      }
+    },
+    {
+      "type": "CAMPAIGN_TARGETS_SEGMENT",
+      "id": "camp_winback-seg_cart_abandoners",
+      "source": {
+        "type": "Campaign",
+        "id": "camp_winback"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_cart_abandoners"
+      },
+      "properties": {
+        "starts_at": "2026-10-01"
+      }
+    },
+    {
+      "type": "CAMPAIGN_TARGETS_SEGMENT",
+      "id": "camp_ctv_launch-seg_household_streamers",
+      "source": {
+        "type": "Campaign",
+        "id": "camp_ctv_launch"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_household_streamers"
+      },
+      "properties": {
+        "starts_at": "2026-10-01"
+      }
+    },
+    {
+      "type": "CAMPAIGN_TARGETS_SEGMENT",
+      "id": "camp_b2b_q4-seg_b2b_buyers",
+      "source": {
+        "type": "Campaign",
+        "id": "camp_b2b_q4"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_b2b_buyers"
+      },
+      "properties": {
+        "starts_at": "2026-10-01"
+      }
+    },
+    {
+      "type": "CAMPAIGN_TARGETS_SEGMENT",
+      "id": "camp_suppression_audit-seg_suppressed",
+      "source": {
+        "type": "Campaign",
+        "id": "camp_suppression_audit"
+      },
+      "target": {
+        "type": "Segment",
+        "id": "seg_suppressed"
+      },
+      "properties": {
+        "starts_at": "2026-10-01"
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-alice",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_alice_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_alice_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-bob",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_bob_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_bob_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-carla",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_carla_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_carla_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-dan",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_dan_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_dan_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-eve",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_eve_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_eve_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-finn",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_finn_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_finn_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-grace",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_grace_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_grace_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-hank",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_hank_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_hank_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-ivy",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_ivy_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_ivy_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-jules",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_jules_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_jules_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-kai",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_kai_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_kai_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "cookie-email-lina",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_lina_web"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_lina_hash"
+      },
+      "properties": {
+        "source": "web_login",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "ctv-cookie_alice_web",
+      "source": {
+        "type": "Identifier",
+        "id": "ctv_living_room"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_alice_web"
+      },
+      "properties": {
+        "source": "ctv_household",
+        "confidence": 0.6
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "ctv-cookie_bob_web",
+      "source": {
+        "type": "Identifier",
+        "id": "ctv_living_room"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_bob_web"
+      },
+      "properties": {
+        "source": "ctv_household",
+        "confidence": 0.6
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "ctv-cookie_finn_web",
+      "source": {
+        "type": "Identifier",
+        "id": "ctv_living_room"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "cookie_finn_web"
+      },
+      "properties": {
+        "source": "ctv_household",
+        "confidence": 0.6
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "office-email_carla_hash",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_office_nat"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_carla_hash"
+      },
+      "properties": {
+        "source": "office_network",
+        "confidence": 0.5
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "office-email_dan_hash",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_office_nat"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_dan_hash"
+      },
+      "properties": {
+        "source": "office_network",
+        "confidence": 0.5
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "office-email_eve_hash",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_office_nat"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_eve_hash"
+      },
+      "properties": {
+        "source": "office_network",
+        "confidence": 0.5
+      }
+    },
+    {
+      "type": "IDENTIFIER_OBSERVED_WITH",
+      "id": "office-email_hank_hash",
+      "source": {
+        "type": "Identifier",
+        "id": "cookie_office_nat"
+      },
+      "target": {
+        "type": "Identifier",
+        "id": "email_hank_hash"
+      },
+      "properties": {
+        "source": "office_network",
+        "confidence": 0.5
+      }
+    }
+  ]
+}
